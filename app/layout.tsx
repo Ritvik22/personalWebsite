@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${inter.variable} ${robotoMono.variable} font-sans bg-dark text-light`}>
+      <body className={`${inter.variable} ${robotoMono.variable} font-sans bg-light text-dark`}>
         <CustomCursor />
         {children}
       </body>

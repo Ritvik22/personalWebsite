@@ -81,8 +81,6 @@ const Web3Section = () => {
 
   return (
     <section id="web3" className="py-20 relative">
-      <div className="absolute -z-10 opacity-20 top-1/2 right-0 w-[600px] h-[600px] bg-gradient-radial from-accent-500/30 to-transparent blur-3xl"></div>
-      
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2 
@@ -94,7 +92,7 @@ const Web3Section = () => {
             Web3 Expertise
           </motion.h2>
           <motion.p 
-            className="text-light/70 mt-4 max-w-2xl mx-auto"
+            className="text-dark/70 mt-4 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -121,8 +119,8 @@ const Web3Section = () => {
                   <div className="flex items-start">
                     <span className="text-3xl mr-4">{feature.icon}</span>
                     <div>
-                      <h3 className="text-lg font-bold text-light mb-2">{feature.title}</h3>
-                      <p className="text-light/70 text-sm">{feature.description}</p>
+                      <h3 className="text-lg font-bold text-dark mb-2">{feature.title}</h3>
+                      <p className="text-dark/70 text-sm">{feature.description}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -135,22 +133,22 @@ const Web3Section = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="p-6 border border-accent-600/30 rounded-xl bg-dark/80 backdrop-blur-md"
+              className="p-6 border border-accent-600/30 rounded-xl bg-light/80 backdrop-blur-md"
             >
               <h3 className="text-xl font-bold mb-4 text-accent-400">Connect Your Wallet</h3>
-              <p className="text-light/70 mb-6">Experience Web3 interaction by connecting your Ethereum wallet.</p>
+              <p className="text-dark/70 mb-6">Experience Web3 interaction by connecting your Ethereum wallet.</p>
               
               {walletConnected ? (
                 <div>
                   <div className="p-4 bg-accent-900/30 rounded-lg mb-4">
-                    <p className="text-sm text-light/80 mb-1">Connected Address:</p>
+                    <p className="text-sm text-dark/80 mb-1">Connected Address:</p>
                     <p className="font-mono text-sm text-accent-400 break-all">
                       {walletAddress.slice(0, 6)}...{walletAddress.slice(-4)}
                     </p>
                   </div>
                   <button
                     onClick={disconnectWallet}
-                    className="w-full py-3 px-4 rounded-full bg-dark border border-accent-600 text-light hover:bg-accent-900/20 transition-colors duration-200"
+                    className="w-full py-3 px-4 rounded-full bg-light border border-accent-600 text-dark hover:bg-accent-900/20 transition-colors duration-200"
                   >
                     Disconnect Wallet
                   </button>
@@ -175,10 +173,10 @@ const Web3Section = () => {
               )}
               
               <div className="mt-8">
-                <h4 className="text-lg font-medium mb-3 text-light">Web3 Technologies</h4>
+                <h4 className="text-lg font-medium mb-3 text-dark">Web3 Technologies</h4>
                 <div className="flex flex-wrap gap-2">
                   {['Ethereum', 'Solidity', 'IPFS', 'Polygon', 'The Graph', 'Hardhat'].map((tech, i) => (
-                    <span key={i} className="px-3 py-1 bg-accent-900/30 rounded-full text-xs text-light/90">
+                    <span key={i} className="px-3 py-1 bg-accent-900/30 rounded-full text-xs text-dark/90">
                       {tech}
                     </span>
                   ))}

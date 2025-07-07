@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-dark py-12 border-t border-primary-900/30">
+    <footer className="bg-light py-12 border-t border-primary-900/30">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div className="col-span-1 md:col-span-2">
@@ -17,10 +17,10 @@ const Footer = () => {
             >
               <div className="flex items-center mb-4">
                 <span className="text-2xl font-bold gradient-text mr-2">RS</span>
-                <span className="text-xl text-light font-semibold">Ritvik Shah</span>
+                <span className="text-xl text-dark font-semibold">Ritvik Shah</span>
               </div>
               
-              <p className="text-light/70 max-w-md mb-6">
+              <p className="text-dark/70 max-w-md mb-6">
                 Software engineer and robotics enthusiast passionate about building innovative solutions at the intersection of technology and creativity.
               </p>
               
@@ -29,7 +29,7 @@ const Footer = () => {
                   href="https://github.com/ritvikshah" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-light/60 hover:text-primary-400 transition-colors"
+                  className="text-dark/60 hover:text-primary-400 transition-colors"
                   aria-label="GitHub"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/ritvik-shah-329811293/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-light/60 hover:text-primary-400 transition-colors"
+                  className="text-dark/60 hover:text-primary-400 transition-colors"
                   aria-label="LinkedIn"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@ const Footer = () => {
                   href="https://twitter.com/ritvikshah" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-light/60 hover:text-primary-400 transition-colors"
+                  className="text-dark/60 hover:text-primary-400 transition-colors"
                   aria-label="Twitter"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -63,13 +63,13 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-light font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-dark font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((link) => (
                 <li key={link}>
                   <a 
                     href={`#${link.toLowerCase()}`} 
-                    className="text-light/70 hover:text-primary-400 transition-colors"
+                    className="text-dark/70 hover:text-primary-400 transition-colors"
                   >
                     {link}
                   </a>
@@ -79,12 +79,12 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-light font-semibold mb-4">Technologies</h4>
+            <h4 className="text-dark font-semibold mb-4">Technologies</h4>
             <div className="flex flex-wrap gap-2">
               {['React', 'Next.js', 'TypeScript', 'Python', 'ROS', 'Robotics', 'TensorFlow', 'Computer Vision'].map((tech) => (
                 <span 
                   key={tech}
-                  className="px-2 py-1 bg-dark/80 border border-primary-800/30 rounded-full text-xs text-light/80"
+                  className="px-2 py-1 bg-light/80 border border-primary-800/30 rounded-full text-xs text-dark/80"
                 >
                   {tech}
                 </span>
@@ -94,11 +94,11 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-primary-900/20 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-light/60 text-sm mb-4 md:mb-0">
+          <p className="text-dark/60 text-sm mb-4 md:mb-0">
             &copy; {currentYear} Ritvik Shah. All rights reserved.
           </p>
           
-          <div className="text-sm text-light/60">
+          <div className="text-sm text-dark/60">
             <a 
               href="#" 
               className="hover:text-primary-400 transition-colors mr-4"

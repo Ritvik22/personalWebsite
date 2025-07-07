@@ -56,8 +56,6 @@ const Skills = () => {
   
   return (
     <section id="skills" className="py-20 relative">
-      <div className="absolute -z-10 opacity-10 bottom-0 right-0 w-[500px] h-[500px] bg-gradient-radial from-primary-500/30 to-transparent blur-3xl"></div>
-      
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2 
@@ -69,7 +67,7 @@ const Skills = () => {
             Technical Skills
           </motion.h2>
           <motion.p 
-            className="text-light/70 mt-4 max-w-2xl mx-auto"
+            className="text-dark/70 mt-4 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -94,14 +92,14 @@ const Skills = () => {
             >
               <div className="flex items-center mb-6">
                 <span className="text-4xl mr-4">{category.icon}</span>
-                <h3 className="text-xl font-bold text-light">{category.title}</h3>
+                <h3 className="text-xl font-bold text-dark">{category.title}</h3>
               </div>
               
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
                   <span 
                     key={skillIndex}
-                    className="px-3 py-1 bg-dark/50 rounded-full text-xs text-light/90"
+                    className="px-3 py-1 bg-light/50 rounded-full text-xs text-dark/90"
                   >
                     {skill}
                   </span>
@@ -117,7 +115,7 @@ const Skills = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h3 className="text-xl font-bold mb-4 text-light">Professional Approach</h3>
+          <h3 className="text-xl font-bold mb-4 text-dark">Professional Approach</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { title: 'Problem Solving', description: 'Analytical approach to complex technical challenges' },
@@ -125,9 +123,9 @@ const Skills = () => {
               { title: 'Collaboration', description: 'Effective teamwork and communication skills' },
               { title: 'User-Centric', description: 'Focus on creating intuitive, valuable solutions' },
             ].map((item, index) => (
-              <div key={index} className="p-4 bg-dark/50 rounded-lg">
+              <div key={index} className="p-4 bg-light/50 rounded-lg">
                 <h4 className="text-primary-400 font-medium mb-2">{item.title}</h4>
-                <p className="text-light/70 text-sm">{item.description}</p>
+                <p className="text-dark/70 text-sm">{item.description}</p>
               </div>
             ))}
           </div>

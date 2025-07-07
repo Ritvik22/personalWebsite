@@ -46,7 +46,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-dark/80 backdrop-blur-md border-b border-primary-800/30'
+          ? 'bg-light/80 backdrop-blur-md border-b border-primary-800/30'
           : 'bg-transparent'
       }`}
     >
@@ -73,7 +73,7 @@ const Navbar = () => {
                 className={`px-3 py-2 text-sm font-medium transition-colors duration-200 relative
                   ${activeSection === link.href.substring(1) 
                     ? 'text-primary-400' 
-                    : 'text-light/80 hover:text-primary-400'}`}
+                    : 'text-dark/80 hover:text-primary-400'}`}
                 whileHover={{ scale: 1.05 }}
                 data-cursor-text="Navigate"
               >
@@ -100,24 +100,24 @@ const Navbar = () => {
           <div className="flex items-center md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-light"
+              className="inline-flex items-center justify-center p-2 rounded-md text-dark"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <span className="sr-only">Open main menu</span>
               <div className="relative w-6 h-5">
                 <span 
-                  className={`absolute h-0.5 w-full bg-light rounded-lg transform transition duration-300 ease-in-out ${
+                  className={`absolute h-0.5 w-full bg-dark rounded-lg transform transition duration-300 ease-in-out ${
                     isMobileMenuOpen ? 'rotate-45 translate-y-2.5' : 'translate-y-0'
                   }`}
                 />
                 <span 
-                  className={`absolute h-0.5 w-full bg-light rounded-lg transform transition duration-300 ease-in-out ${
+                  className={`absolute h-0.5 w-full bg-dark rounded-lg transform transition duration-300 ease-in-out ${
                     isMobileMenuOpen ? 'opacity-0' : 'opacity-100'
                   }`}
                   style={{ top: '50%', transform: 'translateY(-50%)' }}
                 />
                 <span 
-                  className={`absolute h-0.5 w-full bg-light rounded-lg transform transition duration-300 ease-in-out ${
+                  className={`absolute h-0.5 w-full bg-dark rounded-lg transform transition duration-300 ease-in-out ${
                     isMobileMenuOpen ? '-rotate-45 -translate-y-2.5' : 'translate-y-5'
                   }`}
                 />
@@ -137,12 +137,12 @@ const Navbar = () => {
         }}
         transition={{ duration: 0.3 }}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-dark/90 backdrop-blur-md border-b border-primary-800/30">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-light/90 backdrop-blur-md border-b border-primary-800/30">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="block px-3 py-2 rounded-md text-base font-medium text-light/80 hover:bg-primary-900/30 hover:text-light"
+              className="block px-3 py-2 rounded-md text-base font-medium text-dark/80 hover:bg-primary-900/30 hover:text-dark"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
