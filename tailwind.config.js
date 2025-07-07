@@ -51,11 +51,6 @@ module.exports = {
         sans: ['var(--font-inter)', 'sans-serif'],
         mono: ['var(--font-roboto-mono)', 'monospace'],
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'mesh-gradient': 'linear-gradient(to right, rgba(14, 165, 233, 0.2), rgba(230, 189, 128, 0.2), rgba(14, 165, 233, 0.2))',
-      },
       animation: {
         float: 'float 6s ease-in-out infinite',
         glow: 'glow 2s ease-in-out infinite alternate',

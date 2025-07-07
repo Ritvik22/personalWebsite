@@ -55,7 +55,7 @@ const Hero = () => {
               <div className="flex space-x-4">
                 <motion.a
                   href="#projects"
-                  className="px-6 py-3 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full text-light font-medium hover:from-primary-500 hover:to-accent-500 transition-all duration-300"
+                  className="px-6 py-3 bg-primary-600 rounded-full text-light font-medium hover:bg-primary-500 transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -93,11 +93,11 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               data-cursor-text="Hi!"
             >
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary-500/20 to-accent-500/20 animate-pulse-slow aura-glow" />
-              <div className="absolute inset-5 rounded-full bg-gradient-to-r from-primary-500/30 to-accent-500/30" />
-              <div className="absolute inset-10 rounded-full bg-gradient-to-r from-primary-500/40 to-accent-500/40" />
-              <div className="absolute inset-16 rounded-full bg-gradient-to-r from-primary-500/50 to-accent-500/50 flex items-center justify-center">
-                <span className="text-4xl font-bold gradient-text text-shimmer">RS</span>
+              <div className="absolute inset-0 rounded-full bg-primary-500/20 animate-pulse-slow" />
+              <div className="absolute inset-5 rounded-full bg-primary-500/30" />
+              <div className="absolute inset-10 rounded-full bg-primary-500/40" />
+              <div className="absolute inset-16 rounded-full bg-primary-500/50 flex items-center justify-center">
+                <span className="text-4xl font-bold gradient-text">RS</span>
               </div>
             </motion.div>
           </div>

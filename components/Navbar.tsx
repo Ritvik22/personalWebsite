@@ -86,7 +86,7 @@ const Navbar = () => {
             ))}
             <motion.a
               href="#contact"
-              className="ml-4 px-4 py-2 rounded-full bg-gradient-to-r from-primary-600 to-accent-600 text-light font-medium text-sm hover:from-primary-500 hover:to-accent-500 transition-all duration-200"
+              className="ml-4 px-4 py-2 rounded-full bg-primary-600 text-light font-medium text-sm hover:bg-primary-500 transition-all duration-200"
               whileHover={{ scale: 1.05 }}
               data-magnetic
               data-magnetic-strength="0.2"
@@ -150,7 +150,7 @@ const Navbar = () => {
           ))}
           <a
             href="#contact"
-            className="block px-3 py-2 mt-4 rounded-md text-base font-medium text-center bg-gradient-to-r from-primary-600 to-accent-600 text-light hover:from-primary-500 hover:to-accent-500"
+            className="block px-3 py-2 mt-4 rounded-md text-base font-medium text-center bg-primary-600 text-light hover:bg-primary-500"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Get in Touch

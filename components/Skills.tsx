@@ -9,7 +9,7 @@ const skillCategories = [
     title: 'Software Development',
     icon: '💻',
     skills: ['C++', 'Python', 'Java', 'React', 'C', 'Matplotlib', 'Git'],
-    color: 'from-primary-500/20 to-primary-700/20',
+    color: 'bg-primary-500/20',
     borderColor: 'border-primary-600/30',
     hoverBorderColor: 'hover:border-primary-500/50',
   },
@@ -17,7 +17,7 @@ const skillCategories = [
     title: 'Robotics',
     icon: '🤖',
     skills: ['Computer Vision', 'Sensor Fusion', 'Control Systems', 'Embedded Systems', 'Arduino', 'Raspberry Pi', 'SLAM', 'Motion Planning'],
-    color: 'from-tech-500/20 to-tech-700/20',
+    color: 'bg-tech-500/20',
     borderColor: 'border-tech-600/30',
     hoverBorderColor: 'hover:border-tech-500/50',
   },
@@ -25,7 +25,7 @@ const skillCategories = [
     title: 'AI & Machine Learning',
     icon: '🧠',
     skills: ['TensorFlow', 'PyTorch', 'Computer Vision',  'Neural Networks', 'Data Analysis'],
-    color: 'from-accent-500/20 to-accent-700/20',
+    color: 'bg-accent-500/20',
     borderColor: 'border-accent-600/30',
     hoverBorderColor: 'hover:border-accent-500/50',
   },
@@ -88,7 +88,7 @@ const Skills = () => {
               key={category.title}
               variants={itemVariants}
               whileHover={{ y: -10 }}
-              className={`p-6 rounded-xl bg-gradient-to-b ${category.color} backdrop-blur-sm border ${category.borderColor} ${category.hoverBorderColor} transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10`}
+              className={`p-6 rounded-xl ${category.color} backdrop-blur-sm border ${category.borderColor} ${category.hoverBorderColor} transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10`}
             >
               <div className="flex items-center mb-6">
                 <span className="text-4xl mr-4">{category.icon}</span>

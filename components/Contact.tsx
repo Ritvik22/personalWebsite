@@ -132,7 +132,7 @@ const Contact = () => {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 px-6 rounded-full bg-gradient-to-r from-primary-600 to-accent-600 text-light font-medium hover:from-primary-500 hover:to-accent-500 transition-all duration-300 flex items-center justify-center"
+                className="w-full py-3 px-6 rounded-full bg-primary-600 text-light font-medium hover:bg-primary-500 transition-all duration-300 flex items-center justify-center"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

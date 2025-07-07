@@ -157,7 +157,7 @@ const Web3Section = () => {
                 <button
                   onClick={connectWallet}
                   disabled={isLoading}
-                  className="w-full py-3 px-4 rounded-full bg-gradient-to-r from-accent-600 to-primary-600 text-light hover:from-accent-500 hover:to-primary-500 transition-all duration-200 flex items-center justify-center"
+                  className="w-full py-3 px-4 rounded-full bg-primary-600 text-light hover:bg-primary-500 transition-all duration-200 flex items-center justify-center"
                 >
                   {isLoading ? (
                     <span className="animate-pulse">Connecting...</span>

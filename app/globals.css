@@ -15,12 +15,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
   min-height: 100vh;
 }
 
@@ -29,11 +24,11 @@ body {
 }
 
 .gradient-text {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-accent-500 to-tech-500;
+  @apply text-primary-500;
 }
 
 .tech-card {
-  @apply p-6 rounded-xl bg-gradient-to-b from-light/80 to-light border border-primary-800/30 backdrop-blur-sm transition-all duration-300 hover:border-primary-600/50 hover:shadow-lg hover:shadow-primary-500/10;
+  @apply p-6 rounded-xl bg-light border border-primary-800/30 backdrop-blur-sm transition-all duration-300 hover:border-primary-600/50 hover:shadow-lg hover:shadow-primary-500/10;
 }
 
 @keyframes float {
@@ -188,18 +183,7 @@ header, nav, .modal, .dropdown {
 
 /* Text shimmer effect */
 .text-shimmer {
-  background: linear-gradient(to right, #0ea5e9 0%, #e6bd80 30%, #0ea5e9 60%, #0ea5e9 100%);
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shimmer 3s linear infinite;
-}
-
-@keyframes shimmer {
-  to {
-    background-position: 200% center;
-  }
+  color: #0ea5e9;
 }
 
 /* Magnetic effect - added via JavaScript in CustomCursor */

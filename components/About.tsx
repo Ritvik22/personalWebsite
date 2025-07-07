@@ -82,16 +82,15 @@ const About = () => {
           
           <div className="w-full md:w-2/5 order-1 md:order-2 mb-10 md:mb-0">
             <motion.div 
-              className="relative p-2 border-2 border-primary-600/30 rounded-2xl overflow-hidden aura-glow"
+              className="relative p-2 border-2 border-primary-600/30 rounded-2xl overflow-hidden"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="absolute inset-0 bg-mesh-gradient opacity-20"></div>
               <div className="aspect-square bg-light rounded-xl overflow-hidden">
                 {/* Placeholder for profile image */}
-                <div className="w-full h-full bg-gradient-to-br from-primary-900 via-light to-accent-900 flex items-center justify-center">
-                  <span className="text-8xl font-bold gradient-text">RS</span>
+                <div className="w-full h-full bg-primary-500 flex items-center justify-center">
+                  <span className="text-8xl font-bold text-light">RS</span>
                 </div>
               </div>
             </motion.div>

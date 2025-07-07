@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
+import FadeInSection from './FadeInSection';
 
 // Manta ray simulation image data
 const MANTA_RAY_IMAGE_SRC = "/manta-ray-simulation.png"; // Path to the image in public folder
@@ -183,7 +184,7 @@ const Projects = () => {
                     data-cursor-text="Enlarge"
                     style={mantaRayImageStyle}
                   >
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-dark/50 hover:opacity-75 transition-opacity duration-300">
+                    <div className="absolute inset-0 bg-dark/50 hover:opacity-75 transition-opacity duration-300">
                       <div className="absolute bottom-2 right-2 bg-light/80 text-dark text-xs px-2 py-1 rounded">
                         Click to enlarge
                       </div>
@@ -195,7 +196,7 @@ const Projects = () => {
                     onClick={() => openImageModal(project.image, project.description, project.features)}
                     data-cursor-text="Details"
                   >
-                    <div className={`w-full h-full bg-gradient-to-r from-primary-900 via-tech-900 to-primary-800 flex items-center justify-center`}>
+                    <div className="w-full h-full bg-primary-500 flex items-center justify-center">
                       <div className="text-center text-light p-4">
                         <h3 className="text-xl font-bold mb-2">FloodSense</h3>
                         <p className="text-sm opacity-90">AI-Powered Flood Risk Prediction</p>
