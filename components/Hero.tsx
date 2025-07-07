@@ -86,19 +86,19 @@ const Hero = () => {
           
           <div className="w-full md:w-1/2 flex justify-center">
             <motion.div
-              className="relative w-64 h-64 md:w-80 md:h-80"
+              className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
               whileHover={{ scale: 1.05 }}
               data-cursor-text="Hi!"
             >
-              <div className="absolute inset-0 rounded-full bg-primary-500/20 animate-pulse-slow" />
-              <div className="absolute inset-5 rounded-full bg-primary-500/30" />
-              <div className="absolute inset-10 rounded-full bg-primary-500/40" />
-              <div className="absolute inset-16 rounded-full bg-primary-500/50 flex items-center justify-center">
-                <span className="text-4xl font-bold gradient-text">RS</span>
-              </div>
+              <img
+                src="/images/20250704_191839_1.jpg"
+                alt="Ritvik Shah"
+                className="w-full h-full object-cover"
+                draggable="false"
+              />
             </motion.div>
           </div>
         </div>
